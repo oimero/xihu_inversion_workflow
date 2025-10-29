@@ -13,7 +13,7 @@
 - sand_group_thickness：尝试获得砂组级层位砂厚的统计信息
     - 输入：well_horizon_processed.xlsx
     - 输出：sand_group_thickness_complete.xlsx（砂组级层位砂厚的统计信息）
-- well_log_truncate.ipynb：尝试对目的层曲线进行截断
+- well_log_truncate.ipynb：尝试对目的层曲线进行截断（这个方法只对直井有效）
     - 输入：vertical_well_common_las/*.las，sand_group_thickness_complete.xlsx
 - well_log_preprocess.ipynb：（TODO）尝试剔除测井曲线的一些异常值
     - 输入：*.las
