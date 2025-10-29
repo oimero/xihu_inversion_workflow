@@ -1,7 +1,11 @@
 ## 笔记
 
+![](data\Used Well.bmp)
+
 - well_import.ipynb：尝试用lasio库导入Petrel导出的测井曲线
     - 输入：*.las
+
+- well_visualize.ipynb：尝试可视化测井曲线以及解释层位
 
 - well_horizon_preprocess.ipynb：尝试删除一些明显异常的（或者不想要的）井或层位
     - 输入：well_horizon.xlsx
@@ -22,17 +26,20 @@
     - 输入：vertical_well_common_las/*.las，sand_group_thickness_complete.xlsx
     - 输出：vertical_well_truncated_las/*.las
 
-- well_visualize.ipynb：尝试可视化测井曲线以及解释层位
-
 - cali_check.ipynb：尝试通过众数或者直方图检查钻头的基础尺寸 → 12.25 in
 
 - well_log_delete_outliers.ipynb：尝试剔除测井曲线的一些异常值
     - 输入：vertical_well_truncated_las/*.las
     - 输出：vertical_well_las_delete_outliers/*.las
 
-- well_visualize_test.ipynb：测试可视化测井曲线以及解释层位的函数
+- well_visualize_test.ipynb：测试可视化测井曲线以及解释层位的函数，并集中可视化
 
 - well_log_shift_baseline：（TODO）尝试对测井曲线做基线偏移
+
 - well_correlation_analysis.ipynb：（TODO）尝试分析各个测井属性的相关性，热力图&散点图
 
+
+
 ## 工具函数
+
+- well_log_plotter.py：可视化测井曲线以及解释层位
