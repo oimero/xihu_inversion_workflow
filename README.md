@@ -22,11 +22,12 @@
     - 输入：vertical_well_common_las/*.las，sand_group_thickness_complete.xlsx
     - 输出：vertical_well_truncated_las/*.las
 
-- well_log_preprocess.ipynb：（TODO）尝试剔除测井曲线的一些异常值
+- well_log_delete_outliers.ipynb：（TODO）尝试剔除测井曲线的一些异常值
     - 输入：vertical_well_truncated_las/*.las
     - 输出：
+
 - well_visualize.ipynb：尝试可视化测井曲线以及解释层位
-    -
+
 - well_correlation_analysis.ipynb：（TODO）尝试分析各个测井属性的相关性，热力图&散点图
 - cali_check.ipynb：尝试通过众数或者直方图检查钻头的基础尺寸
 
