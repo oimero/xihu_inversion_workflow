@@ -117,8 +117,8 @@ def plot_well_log(
 
     # ============ 4. 确定绘图深度范围 ============
     if well_horizons is not None and len(well_horizons) > 0:
-        min_depth = min(well_horizons["MD"].min() - depth_padding, las.index[0])
-        max_depth = max(well_horizons["MD"].max() + depth_padding, las.index[-1])
+        min_depth = well_horizons["MD"].min() - depth_padding
+        max_depth = well_horizons["MD"].max() + depth_padding
         print(f"✓ 使用层位深度范围: {min_depth:.2f} - {max_depth:.2f} m")
     else:
         min_depth = las.index[0]
