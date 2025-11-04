@@ -32,6 +32,8 @@
     - 输入：vertical_well_truncated_las/*.las
     - 输出：vertical_well_las_delete_outliers/*.las
 
+- well_log_delete_outliers_by_layers.ipynb：尝试分层剔除测井曲线的一些异常值
+
 - well_visualize_test.ipynb：测试可视化测井曲线以及解释层位的函数，并集中可视化
 
 - well_log_shift_baseline：（TODO）尝试对测井曲线做基线偏移
@@ -56,3 +58,4 @@
 ## 工具函数
 
 - well_log_plotter.py：可视化测井曲线以及解释层位
+- well_log_outlier_detector.py: 剔除测井曲线的先验异常值和统计异常值
