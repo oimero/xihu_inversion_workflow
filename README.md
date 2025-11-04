@@ -1,6 +1,10 @@
 ## 笔记
 
-![](data\Used Well.bmp)
+![](data\diagrams\Used Well.bmp)
+
+---
+
+### Week1
 
 - well_import.ipynb：尝试用 lasio 库导入 Petrel 导出的测井曲线
     - 输入：*.las
@@ -32,24 +36,30 @@
     - 输入：vertical_well_truncated_las/*.las
     - 输出：vertical_well_las_delete_outliers/*.las
 
+---
+
+### Week2
+
 - well_log_delete_outliers_by_layers.ipynb：尝试分层剔除测井曲线的一些异常值
+    - 输入：vertical_well_truncated_las/*.las
+    - 输出：vertical_well_las_delete_outliers_by_layers/*.las
 
 - well_visualize_test.ipynb：测试可视化测井曲线以及解释层位的函数，并集中可视化
 
-- well_log_shift_baseline：（TODO）尝试对测井曲线做基线偏移
-    - 问题1：需要做吗？
+- well_log_baseline_correction：（SUSPEND）尝试对测井曲线做基线校正
+    - 问题1：需要做吗？→ 一般对 SP 曲线做基线校正，暂时用不着 SP
 
-![](data\baseline_shift.png)
+![](data\diagrams\baseline_shift.png)
 
 - well_correlation_analysis.ipynb：（TODO）分层位分析测井曲线之间的相关性，热力图&交会图
-    - 问题1：部分井缺层位？
+    - 问题1：部分井缺层位？→ 将解释层位更换到了5月23日提供的版本，现在不缺了
 
 - seismic_import.ipynb：试着用 pyzgy 库导入地震数据
     - 输入：obn-yuan.zgy
 
 - forward_correlation_analysis.ipynb：（TODO）卷积正演，然后分析正演波形与井旁道地震波形的相关性
-    - 问题1：要把井转换到时间域→构建速度模型时，怎么知道第一个井解释层位是在地震上的哪个时间采样点？
-    - 前提1：要对波阻抗做地震频带的带通→问题2
+    - 问题1：要把井转换到时间域。但是，构建速度模型时，怎么知道井的**第一个**解释层位要对到地震上的哪个时间采样点？
+    - 前提1：别忘了对波阻抗做地震频带的带通
     - 问题2：怎么获得用于卷积的小波？
 
 - borehole_correction：（TODO）根据测井曲线之间的相关性，对扩径段DT和DEN进行拟合
@@ -57,5 +67,10 @@
 
 ## 工具函数
 
+### Week1
+
 - well_log_plotter.py：可视化测井曲线以及解释层位
+
+### Week2
+
 - well_log_outlier_detector.py: 剔除测井曲线的先验异常值和统计异常值
