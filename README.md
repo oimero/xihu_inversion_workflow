@@ -64,13 +64,36 @@
 
 - borehole_correction：（TODO）根据测井曲线之间的相关性，对扩径段DT和DEN进行拟合
 
+---
+
+### Week3 & Week4
+
+参考：Tschannen V, Ghanim A, Ettrich N. Partial automation of the seismic to well tie with deep learning and Bayesian optimization\[J\]. Computers & Geosciences, 2022, 164: 105120.
+
+- 01_Data_Import.ipynb：加载数据并将其存储到 _wtie_ 的内部格式中
+
+- 02_Introduction_to_wtie.ipynb：超参数未经过贝叶斯优化的井震标定
+
+- 03_Auto_Well_Tie.ipynb：超参数经过贝叶斯优化的井震标定
+
+---
+
+### Week5:
+
+
 
 ## 工具函数
 
 ### Week1
 
-- well_log_plotter.py：可视化测井曲线以及解释层位
+- visualize.well_log_plotter：可视化测井曲线以及解释层位
 
 ### Week2
 
-- well_log_outlier_detector.py: 剔除测井曲线的先验异常值和统计异常值
+- utils.well_log_outlier_detector: 剔除测井曲线的先验异常值和统计异常值
+
+### Week3 & Week4
+
+- wtie.*：参考上述论文，加入对应开源库（开源协议：GPL3）
+
+### Week5
